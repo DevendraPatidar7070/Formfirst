@@ -1,0 +1,69 @@
+<div class="main-content">
+
+
+            <div class="button-citizen">
+                <img src="assets/images/Inquiry.png" alt="" title="Inquiry" data-toggle="modal" data-target="#exampleModal">
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Admission Inquiry</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="sname" class="col-form-label">Name:</label>
+                                <asp:TextBox runat="server" CssClass="form-control" ID="f_namea" placeholder="Name"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="f_name" runat="server" ErrorMessage="Please enter a name" ForeColor="Red" ControlToValidate="f_namea"></asp:RequiredFieldValidator>
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email:</label>
+                                
+                                  <asp:TextBox runat="server" CssClass="form-control" ID="emailg" placeholder="Email" TextMode="Email"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="email" runat="server" ErrorMessage="Please enter a email id" ForeColor="Red" ControlToValidate="emailg"></asp:RequiredFieldValidator>
+                              
+                                <asp:RegularExpressionValidator ID="emailgh" runat="server" ErrorMessage="Enter valid email id" ForeColor="Red" ControlToValidate="emailg" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Faculty" class="col-form-label">Faculty:</label>
+                                <asp:DropDownList ID="Fdropdown" runat="server" CssClass="form-control">
+                                    <asp:ListItem></asp:ListItem>
+                                </asp:DropDownList>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Faculty" class="col-form-label">Faculty:</label>
+                                <asp:DropDownList ID="cdropdown" runat="server" CssClass="form-control">
+                                    <asp:ListItem></asp:ListItem>
+                                </asp:DropDownList>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile" class="col-form-label">Mobile No:</label>
+                               
+                                 <asp:TextBox runat="server" CssClass="form-control" ID="mobile_no" placeholder="+91" TextMode="Phone"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="phone" runat="server" ErrorMessage="Please enter mobile number" ForeColor="Red" ControlToValidate="mobile_no"></asp:RequiredFieldValidator>
+                                 <asp:RegularExpressionValidator ID="m" runat="server" ControlToValidate="mobile_no" ErrorMessage="Please enter a valid mobile number" ForeColor="Red" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                <asp:Button ID="submit" runat="server" Text="Submit" class="btn btn-primary" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                 </div>-->
